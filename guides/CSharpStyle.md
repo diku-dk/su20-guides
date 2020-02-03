@@ -160,26 +160,10 @@ readonly`, not `readonly static`).
 
 There should be one class per file. This is to keep source files small. An
 exception is made for partial classes, where a part of the class is written by
-an automated tool (e.g., a GUI designer).
+an automated tool (e.g., a GUI designer). You will most likely not encounter or need partial classes in this course.
 
-## JetBrains Rider Settings
+## VsCode Settings
 
-Our IDE has the option to help you follow this style guide.
+Our IDE has the option to help you follow this style guide, through an extension.
 
-To get started, you will need to download [Rider
-Settings](https://github.com/diku-dk/su18-guides/raw/v1.1/files/RiderSettings.jar),
-and import them in your JetBrains Rider instance:
-
-* Select File, Import Settings...
-* Select the downloaded settings file, and press OK.
-* Select all the components of the settings file, and press OK.
-* Press OK to restart Rider.
-
-NB! This doesn't reformat everything. You'll have to do that manually, on a
-per-file basis:
-
-To format a given file according to the policy:
-
-* Press Ctrl + E, followed by C.
-* Select either the given file or your entire solution.
-* Select Full Cleanup, and press OK.
+**TODO: Add EditorConfig setup guide**

@@ -2,7 +2,7 @@
 
 This guide will provide some advide on how to format and structure your technical reports.
 
-The [su19](https://github.com/diku-dk/su19-guides/blob/master/files/su19.sty)
+The [su20](https://github.com/diku-dk/su20-guides/blob/master/files/su20.sty)
 LaTeX package provides a template for your LaTeX reports in Software Development.
 
 To use it, you will have to install [Python 3](https://www.python.org/download/releases/3.0/),
@@ -18,7 +18,7 @@ Then, you can start with a `master.tex` as follows:
 ```
 \documentclass[a4paper]{article}
 
-\usepackage{su19}
+\usepackage{su20}
 
 \header{%
   assignment={Exercise 1: Introduction to C#},%
@@ -37,14 +37,14 @@ Then, you can start with a `master.tex` as follows:
 If you are writing in Danish, you should instead write:
 
 ```
-\usepackage[danish]{su19}
+\usepackage[danish]{su20}
 ```
 
 When including code snippets we recommend using the `minted` package. It is a
 very nice environment for viewing code, as it allows for a lot of customization.
 
 For your convenience we provide a configuration for `minted` in
-`su18.sty` This configuration is not mandatory, but we expect that all included
+`su20.sty` This configuration is not mandatory, but we expect that all included
 code snippets are included through LaTeX code-packages and not as images.
 Furthermore we expect both syntax highlighting and line numbers. If you chose to
 use our configuration, including code is as easy as the following example:
@@ -52,7 +52,7 @@ use our configuration, including code is as easy as the following example:
 ```
 \documentclass[a4paper]{article}
 
-\usepackage{su19}
+\usepackage{su20}
 
 \begin{document}
 
@@ -91,7 +91,7 @@ The technical report can be compiled in a number of different ways:
 $ pdflatex -shell-escape master.tex
 ```
 
-That is, provided you've placed `su19.sty` either in the same
+That is, provided you've placed `su20.sty` either in the same
 directory, or in your `~/texmf/tex/latex/` directory.
 
 #### Using `latexrun`
@@ -104,23 +104,12 @@ $ ./latexrun --latex-args='-shell-escape' master.tex
 ```
 
 P.S. `latexrun` can be downloaded here:
-[latexrun](https://github.com/diku-dk/su18-guides/raw/v1.3/files/latexrun) or at
+[latexrun](https://raw.githubusercontent.com/diku-dk/su20-guides/master/files/latexrun) or at
 the original [repository](https://github.com/aclements/latexrun).
 
 Remember to make sure that `latexrun` is an executable (`sudo chmod +x latexrun`)!
 
-#### Using Makefile
-
-We have created a package containing a Makefile an a default folder structure to make it
-really nice and easy to compile your technical report, cleaning up latex compile files
-(.aux, .log, etc.).
-
-P.S This setup can be downloaded as a .zipped folder here:
-[su18TechReportSample](https://github.com/diku-dk/su18-guides/raw/v1.3/files/testSU18sty.zip)
-
 ### Final notes
 
-If `su19.sty` or any other files from this repository are changed during the course,
-the changes will be announced on Absalon as well as on this repository. We will
-ensure backwards compatibility, so using a new version will not break your
-existing LaTeX-files.
+If `su20.sty` or any other files from this repository are changed during the course,
+the changes will be announced on Absalon as well as on this repository. We will try our best to ensure backwards compatibility, so using a new version will not break your existing LaTeX-files.
