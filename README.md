@@ -10,7 +10,6 @@
 
 * [C# Style Guide](guides/CSharpStyle.md)
 * [Example C# Code Formatting](guides/CSharpFormatting.md)
-* [Running Doxygen Locally](guides/Doxygen.md)
 * [NUnit Guidelines](guides/NUnit_guidelines.md)
 
 
@@ -18,7 +17,7 @@
 ## IDE and software
 We will be using Visual Studio Code for the course.
 
-We use .NET Core 3.1 and the dotnet cli-tool to create, build and execute projects.
+We use .NET Core 3.1 and the `dotnet cli-tool` to create, build and execute projects.
 
 We use NUnit for unit testing. 
 
