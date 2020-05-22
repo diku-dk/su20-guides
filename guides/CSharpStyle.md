@@ -15,6 +15,9 @@ our style in your extensions, to make it easy for us to drop in and give you
 We also try to give the reasons for our choices. If you disagree, you *can*
 take it up with your TA, but your time is better spent _programming_.
 
+This style guide has also been enforced using the [editorconfig project](https://editorconfig.org/)
+in the file [.editorconfig](https://github.com/diku-dk/su20-guides/blob/master/guides/.editorconfig)
+
 ## Origins
 
 This style guide makes a sacrifice between the style of the code found
