@@ -6,6 +6,7 @@ root = true # Set to true to stop the .editorconfig file search on the current f
 
 [*]
 indent_style = space
+max_line_length=100
 
 [*.cs]
 indent_size = 4
